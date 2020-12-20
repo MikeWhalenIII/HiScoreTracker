@@ -13,8 +13,10 @@ namespace HiscoreTracker.Controllers
             return "hello.";
         }
 
-        public IActionResult Track()
+        public IActionResult Track(string player)
         {
+            ViewData["Player"] = player;
+
             return View();
         }
     }
