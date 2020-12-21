@@ -13,6 +13,7 @@ namespace HiscoreTracker.Controllers
             return "hello.";
         }
 
+        [HttpGet]
         public IActionResult Track(string player)
         {
             ViewData["Player"] = player;

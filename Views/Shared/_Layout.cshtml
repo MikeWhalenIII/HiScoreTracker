@@ -27,8 +27,8 @@
                         </li>
                     </ul>
 
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Username" aria-label="Username">
+                    <form asp-controller="OSRS" asp-action="Track" method="get" class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Username" aria-label="Username" name="player">
                         <button class="btn btn-secondary" type="submit">Track</button>
                     </form>
 
